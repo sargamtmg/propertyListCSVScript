@@ -14,7 +14,7 @@ To run the script, use the following command: node generateList.js <address> <pa
 Replace `<address>` with the address of the location you want to fetch listings for, and `<pageSize>` with the desired page size (number of listings per page).
 
 Example:
-### node generateList.js "73 W Monroe St, Chicago, IL 60603, USA" 30
+**node generateList.js "73 W Monroe St, Chicago, IL 60603, USA" 30**
 
 This will fetch property listings for the address "123 Main St, City, Country" with a page size of 50 listings per page.
 
