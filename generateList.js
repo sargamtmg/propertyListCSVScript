@@ -16,8 +16,10 @@ async function generateCSV(address, pageSize) {
         "Listing ID": listing.id,
         "Listing Title": listing.headingSection?.heading || "N/A",
         "Nightly Price":
-          listing.priceSection?.priceSummary?.displayMessages?.[0]
-            ?.lineItems?.[0]?.price?.formatted || "N/A",
+          listing.priceSection?.priceSummary?.displayMessages?.[0]?.lineItems?.[0]?.price?.formatted.replace(
+            /\$/g,
+            ""
+          ) || "N/A",
         "Listing URL": listing.cardLink?.resource.value || "N/A",
       }));
 
