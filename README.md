@@ -23,6 +23,10 @@ This will fetch property listings for the address "123 Main St, City, Country" w
 - `<address>`: The address of the location (string).
 - `<pageSize>`: The page size for fetching listings (number).
 
+## Methodology
+
+I have created mainly two js file. 1st is to fetch the data and 2nd for generating csv file from the list inside the data. While trying to fetch data from API directly, I am facing 403 forbidden issue, so, I have added the consition that if executing API request doesn't provide me necessary data, I will use mock data that I have stored in file called response.json. Finally data either from API fetch or mock data, csv file will be generated in listings folder.
+
 ## Output
 
 The script generates a CSV file named `listing_<timestamp>.csv` in the folder named listings, containing the following columns:
