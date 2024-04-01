@@ -33,6 +33,6 @@ The script generates a CSV file named `listing_<timestamp>.csv` in the folder na
 - Listing URL
 
 ## Dependencies
--axios: ^1.6.8,
--objects-to-csv: ^1.3.6
+- axios: ^1.6.8
+- objects-to-csv: ^1.3.6
 
