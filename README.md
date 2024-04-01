@@ -25,7 +25,7 @@ This will fetch property listings for the address "123 Main St, City, Country" w
 
 ## Output
 
-The script generates a CSV file named `listing_<timestamp>.csv` in the current directory, containing the following columns:
+The script generates a CSV file named `listing_<timestamp>.csv` in the folder named listings, containing the following columns:
 
 - Listing ID
 - Listing Title
