@@ -16,7 +16,7 @@ Replace `<address>` with the address of the location you want to fetch listings 
 Example:
 **node generateList.js "73 W Monroe St, Chicago, IL 60603, USA" 30**
 
-This will fetch property listings for the address "73 W Monroe St, Chicago, IL 60603, USA" with a page size of 30 listings per page.
+This will fetch property listings for the address "73 W Monroe St, Chicago, IL 60603, USA" with a size of 30 listings.
 
 ## Arguments
 
