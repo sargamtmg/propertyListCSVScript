@@ -1,11 +1,12 @@
 const axios = require("axios");
 const jsonData = require("./response.json");
 
-// function to fetch data from api
+// function to get mock response
 module.exports.fetchData = async () => {
   return jsonData;
 };
 
+//function to get response from API
 module.exports.callAPI = async (address, pageSize) => {
   const url = "https://www.vrbo.com/graphql";
 
@@ -121,8 +122,8 @@ module.exports.callAPI = async (address, pageSize) => {
     accept: "*/*",
     Host: "www.vrbo.com",
     Connection: "keep-alive",
-    "Accept-Encoding": "gzip, deflate, br, zstd", //added
-    "accept-language": "en-US,en;q=0.9", //modified
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
     "cache-control": "no-cache",
     "client-info": "shopping-pwa,unknown,unknown",
     "content-type": "application/json",
